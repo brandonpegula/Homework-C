@@ -8,34 +8,32 @@
 
 // Assignment C1
 
-class Multiplier{
+// class Multiplier{
 
-    constructor(){
-   	this.currentValue = 1;
-    }
+//     constructor(){
+//    	this.currentValue = 1;
+//     }
 
-     multiply(number) {
-       this.currentValue =  number * this.currentValue
-        }
-    getCurrentValue() {
-        return  this.currentValue 
-    }
+//      multiply(number) {
+//        this.currentValue =  number * this.currentValue
+//         }
+//     getCurrentValue() {
+//         return  this.currentValue 
+//     }
 
-}
+// }
 
-var m = new Multiplier()
+// var m = new Multiplier()
 
 // Assignment C2
 
-// class Album{
-// 	constructor(name, location){
-// 			this.name = name;
-// 			this.location = location;
-// 		}
-// }
+class Album{
+	constructor(name, location){
+			this.name = name;
+			this.location = location;
+		}
+}
 
 
-// var photo = new Album('name.jpg', 'desktop')
+var photo1 = new Album('name.jpg', 'Philadelphia')
 
-// var test = new Multiplier(4,5);
-// console.log(test)
