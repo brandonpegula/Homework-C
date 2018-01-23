@@ -27,13 +27,59 @@
 
 // Assignment C2
 
-class Album{
-	constructor(name, location){
-			this.name = name;
-			this.location = location;
-		}
+// class Album{
+// 	constructor(name, location){
+// 			this.name = name;
+// 			this.location = location;
+// 		}
+// }
+
+// class Photo extends Album{
+
+// }
+
+
+// var photo1 = new Photo('name.jpg', 'Philadelphia')
+
+// Assignment C3
+
+class School{
+	constructor(schoolName, location){
+		this.schoolName = 'Valley View'
+		this.location = 'Archbald, PA'
+	}
+}
+
+class Person extends School{
+	constructor(firstName, lastName, age, schoolName, location){
+		super(schoolName, location)
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.age = age;
+	}
+}
+
+class Teacher extends Person{
+	constructor(firstName, lastName, age, course, schoolName, location){
+		super(firstName, lastName, age, schoolName, location)
+		this.course = course;
+
+	}
+
+}
+
+class Student extends Person{
+	constructor(firstName, lastName, age, absences, schoolName, location){
+		super(firstName, lastName, age, schoolName, location)
+		this.absences = absences;
+	}
+
 }
 
 
-var photo1 = new Album('name.jpg', 'Philadelphia')
-
+var teacher1 = new Teacher('Rebecca', 'Smith', 45, 'English')
+var teacher2 = new Teacher('Jim', 'Straus', 39, 'Algebra I')
+var teacher3 = new Teacher('Sam', 'Santarelli', 51, 'History') 
+var student1 = new Student('Steven', 'Jones', 14, 3)
+var student2 = new Student('Val', 'Grey', 15, 1)
+var student3 = new Student('Jennifer', 'Garcia', 16, 0)
