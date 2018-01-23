@@ -28,18 +28,26 @@
 // Assignment C2
 
 // class Album{
-// 	constructor(name, location){
-// 			this.name = name;
-// 			this.location = location;
+// 	constructor(albumName, location){
+// 			this.albumName = 'NFC Championship Game';
+// 			this.location = 'Lincoln Financial Field: Philadelphia, PA';
 // 		}
 // }
 
 // class Photo extends Album{
+// 	constructor(photoName, size, albumName, location){
+// 		super(albumName, location)
+// 		this.photoName = photoName;
+// 		this.size = size + 'MB';
+// 	}
 
 // }
 
 
-// var photo1 = new Photo('name.jpg', 'Philadelphia')
+// var photo1 = new Photo('touchdown!', 300)
+// var photo2 = new Photo('turnover', 375)
+// var photo3 = new Photo('pick six!', 250)
+// var photo4 = new Photo('final', 200)
 
 // Assignment C3
 
